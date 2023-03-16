@@ -1,0 +1,12 @@
+[package]
+name = "prisma-client-rust-bug"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+prisma-client-rust = { git = "https://github.com/Brendonovich/prisma-client-rust", tag = "0.6.5", default-features = false, features = ["sqlite"] }
+prisma-client-rust-cli = { git = "https://github.com/Brendonovich/prisma-client-rust", tag = "0.6.5", default-features = false, features = ["sqlite"] }
+serde = { version = "1.0.156", default-features = false, features = ["derive"] }
+tokio = { version = "1.26.0", features = ["full"] }
